@@ -7,7 +7,7 @@
 #include <curl/easy.h>
 
 /*
- * A dynamic library to allow process-intern network requests from within Vim
+ * A dynamic library to allow process-internal network requests from within Vim
  *
  * To use it, set LD_LIBRARY_PATH to include the directory with libvimcurl.so,
  * start Vim and make a request with:
