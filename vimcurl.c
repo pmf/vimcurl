@@ -54,6 +54,10 @@ WriteMemoryCallback(void *ptr, size_t size, size_t nmemb, void *data)
   return realsize;
 }
 
+/*
+ * Contrary to what the name suggests, curl will infer the protocol from the
+ * URL, so it may work with protocols other than HTTP.
+ */
 char* make_GET_request(const char* request)
 {
   CURL *curl_handle;
