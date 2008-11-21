@@ -8,7 +8,7 @@ otherwise) from within a Vim process (this should be a bit faster than using
 Platforms
 =========
 
-Vim's `libcall*-functionality is available on Windows, but you need to be able to
+Vim's `libcall`-functionality is available on Windows, but you need to be able to
 build the `libvimcurl.dll` (my `Makefile` does not do this).
 
 Installation
