@@ -24,4 +24,11 @@ Installation
     # Install the plugin
     cp plugin/vimcurl.vim ~/.vim/plugin
 
+Usage
+=====
+
+From within Vim:
+
+    :echo Vimcurl("http://example.org")
+
 
