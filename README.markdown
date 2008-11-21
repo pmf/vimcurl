@@ -1,15 +1,15 @@
 Overview
 ========
 
-Provides a library for Vim's libcall-function to make requests (over HTTP or
+Provides a library for Vim's `libcall`-function to make requests (over HTTP or
 otherwise) from within a Vim process (this should be a bit faster than using
-curl or wget as external processes).
+`curl` or `wget` as external processes).
 
 Platforms
 =========
 
-Vim's libcall-functionality is available on Windows, but you need to be able to
-build the libvimcurl.dll (my Makefile does not do this).
+Vim's `libcall*-functionality is available on Windows, but you need to be able to
+build the `libvimcurl.dll` (my `Makefile` does not do this).
 
 Installation
 ==============
@@ -34,10 +34,10 @@ From within Vim:
 Implementation
 ==============
 
-Vim's libcall-function requires the function in the external library to have
+Vim's `libcall`-function requires the function in the external library to have
 String -> String semantics, so we can only pass one single string parameter to
 this external function. I will probably implement POST-support by overloading
-the Vimcurl-function in vimcurl.vim so it takes a Vim-dictionary and encodes
-this somehow in a String to pass to a make_POST_request-function in the
+the `Vimcurl`-function in `vimcurl.vim` so it takes a Vim-dictionary and encodes
+this somehow in a String to pass to a `make_POST_request`-function in the
 library.
 
